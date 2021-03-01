@@ -39,3 +39,4 @@ npm-debug.log
 mix.lock
 assets/package-lock.json
 config/prod.secret.exs
+priv/cert/
