@@ -17,7 +17,8 @@ defmodule SleeprescueWeb.Router do
   scope "/", SleeprescueWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    get "/", WelcomeController, :index
+
   end
 
   # Other scopes may use custom stacks.
