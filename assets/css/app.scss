@@ -3,6 +3,24 @@
 @import "scss/fontawesome.scss";
 @import "scss/solid.scss";
 
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+  @apply flex flex-row items-center justify-between pt-10 pb-10;
+}
+
+.head-option {
+  @apply inline pl-5 pr-5;
+}
+
+.footer {
+  @apply flex flex-col justify-center items-center;
+}
+
+.body {
+  @apply bg-dark text-white font-oxygen pr-10 pl-10
+}
