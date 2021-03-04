@@ -1,0 +1,27 @@
+.header {
+    @apply flex flex-row items-center justify-between pt-10 pb-10;
+}
+
+.logo {
+    @apply transform scale-75 origin-left;
+}
+
+.head-option {
+@apply inline pl-5 pr-5;
+}
+
+.header-btn {
+@apply relative w-14 h-14 flex flex-col items-center justify-center bg-supplementary rounded-full shadow-md;
+}
+
+.long-line {
+@apply w-6;
+}
+
+.short-line {
+@apply w-4;
+}
+
+.header-line {
+@apply bg-dark p-0.5 rounded m-1;
+}

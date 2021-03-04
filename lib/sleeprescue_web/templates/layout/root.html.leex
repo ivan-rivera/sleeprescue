@@ -11,8 +11,10 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
   </head>
   <body class="body">
-    <%= render "_header.html" %>
-    <%= @inner_content %>
+    <%= render "_header.html", conn: @conn %>
+    <main class="main">
+      <%= @inner_content %>
+    </main>
   </body>
-  <%= render "_footer.html" %>
+  <%= render "_footer.html", conn: @conn %>
 </html>
