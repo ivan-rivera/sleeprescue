@@ -1,5 +1,5 @@
 <footer class="footer">
-    <p>SleepRescue.org © 2021</p>
+    <p>SleepRescue.org © <%= DateTime.utc_now.year%></p>
     <span>
         <p class="inline-block">Built with Phoenix</p>
         <img class="inline-block" src="<%= Routes.static_path(@conn, "/images/phoenix.svg") %>" alt="logo">

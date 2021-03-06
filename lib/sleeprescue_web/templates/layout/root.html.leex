@@ -12,9 +12,9 @@
   </head>
   <body class="body">
     <%= render "_header.html", conn: @conn %>
-    <main class="main">
+    <div class="main">
       <%= @inner_content %>
-    </main>
+    </div>
   </body>
   <%= render "_footer.html", conn: @conn %>
 </html>
