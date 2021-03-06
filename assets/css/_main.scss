@@ -1,7 +1,15 @@
 .body {
-    @apply bg-dark text-white font-oxygen pr-10 pl-10 flex flex-col h-screen justify-between;
+    @apply bg-dark text-white font-oxygen pr-5 pl-5 flex flex-col h-screen justify-between;
   }
 
 .main {
   @apply mb-auto;
+}
+
+.sign-up-icon {
+  @apply ml-5 bg-dark text-white p-2.5 rounded-l-3xl; 
+}
+
+.sign-up-input {
+  @apply flex-grow pl-2.5 pt-2 pb-2 mr-5 rounded-r-3xl border-dark border-2;
 }
