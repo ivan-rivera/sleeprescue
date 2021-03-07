@@ -7,7 +7,17 @@
         <div class="header-line short-line inline"></div>
         <div class="header-line long-line inline"></div>
     </div>
-    <nav class="absolute inline right-0 top-24 w-48 z-10 bg-dark border-2 border-white rounded-2xl" x-show="isOpen">
+    <nav
+        class="lg:hidden absolute inline right-0 top-24 w-48 z-10 bg-dark border-2 border-white rounded-2xl"
+        x-show="isOpen"
+        x-transition:enter="transition ease-out duration-150"
+        x-transition:enter-start="opacity-0"
+        x-transition:enter-end="opacity-100"
+        x-transition:leave="transition ease-in duration-150"
+        x-transition:leave-start="opacity-100"
+        x-transition:leave-end="opacity-0"
+        @click.away="isOpen=false"
+    >
         <%= render "headnav.html" %>
     </nav>
     <nav class="hidden lg:block">
