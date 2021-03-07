@@ -10,11 +10,9 @@
     <script defer phx-track-static type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.1/dist/alpine.min.js" defer></script>
   </head>
-  <body class="body">
+  <body class="main-body">
     <%= render "_header.html", conn: @conn %>
-    <div class="main">
       <%= @inner_content %>
-    </div>
   </body>
   <%= render "_footer.html", conn: @conn %>
 </html>

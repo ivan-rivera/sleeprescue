@@ -1,37 +1,55 @@
-<div class="flex flex-col justify-between">
-    <div class="flex flex-col justify-between mb-5">
+<div class="flex flex-col lg:flex-row justify-between items-center lg:items-baseline xl:items-top">
+    <div class="flex flex-col justify-between mb-5 max-w-md">
         <section>
-            <div class="font-bold text-4xl text-center mb-2.5">SleepRescue.org</div>
-            <div class="text-lg text-supplementary text-center mb-5">Let’s get your sleep back on track</div>
-            <div class="text-base mt-3 mb-3 text-center">Sleep is not a privilege, yet so many of us are struggling with insomnia. Sleep Rescue offers resources for self-guided Cognitive Behavioural Therapy for insomnia.</div>
+            <div class="font-bold text-4xl md:text-5xl xl:text-6xl text-center mt-5 mb-2.5">SleepRescue.org</div>
+            <div class="text-lg md:text-2xl text-supplementary text-center mb-5">Let’s get your sleep back on track</div>
+            <div class="text-base xl:text-xl mt-3 mb-3 text-center">Sleep is not a privilege, yet so many of us are struggling with insomnia. Sleep Rescue offers resources for self-guided Cognitive Behavioural Therapy for insomnia.</div>
         </section>
-        <section class="hidden flex flex-row justify-between">
-            <div>Card 1</div>
-            <div>Card 2</div>
-            <div>Card 3</div>
+        <section class="flex flex-row justify-between items-center max-w-xs">
+            <div class="hidden xl:block xl:top-64 relative">
+                <div class="bg-white rounded-2xl items-center flex flex-col justify-between pt-10 pb-10 absolute h-48 w-40 z-10 border-2 border-dark bottom-12">
+                    <img class="pb-5" src=<%= Routes.static_path(@conn, "/images/cbti_book.svg") %> alt="cbti book">
+                    <p class="text-sm text-dark ml-2.5 mr-2.5">Learn to use CBT-i</p>
+                </div>
+                <div class="bg-supplementary rounded-2xl absolute h-48 w-40 z-0 transform skew-y-6 border-2 border-dark bottom-10"></div>
+            </div>
+            <div class="hidden lg:block transform lg:scale-125 transform lg:translate-x-32 lg:top-80 xl:top-64 xl:scale-100 xl:translate-x-0 relative">
+                <div class="bg-white rounded-2xl items-center flex flex-col justify-between pt-10 pb-10 absolute h-48 w-40 z-10 border-2 border-dark bottom-12">
+                    <img class="pb-5" src=<%= Routes.static_path(@conn, "/images/track_progress.svg") %> alt="charts">
+                    <p class="text-sm text-dark ml-2.5 mr-2.5">Track your progress</p>
+                </div>
+                <div class="bg-supplementary rounded-2xl absolute h-48 w-40 z-0 transform skew-y-6 border-2 border-dark bottom-10"></div>
+            </div>
+            <div class="hidden xl:block xl:top-64 relative">
+                <div class="bg-white rounded-2xl items-center flex flex-col justify-between pt-10 pb-10 absolute h-48 w-40 z-10 border-2 border-dark bottom-12">
+                    <img class="pb-5" src=<%= Routes.static_path(@conn, "/images/improve_sleep.svg") %> alt="night">
+                    <p class="text-sm text-dark ml-2.5 mr-2.5">Improve your sleep</p>
+                </div>
+                <div class="bg-supplementary rounded-2xl absolute h-48 w-40 z-0 transform skew-y-6 border-2 border-dark bottom-10"></div>
+            </div>
         </section>
     </div>
-    <div class="max-w-md pt-5 pb-5 mb-5 flex flex-col justify-between text-dark rounded-xl bg-gradient-to-br from-supplementary to-primary">
-        <section class="pb-10">
-            <div class="text-3xl font-bold text-center pb-5">Sign Up</div>
+    <div class="max-w-lg lg:ml-5 p-1.5 flex flex-col justify-between text-dark rounded-xl bg-gradient-to-br from-supplementary to-primary">
+        <section class="pb-5">
+            <div class="text-3xl font-bold text-center pb-2.5">Sign Up</div>
             <div class="text-normal text-center">Your recovery begins today</div>
         </section>
-        <form action="" class="pb-10 flex flex-col">
-            <div class="flex flex-row items-center w-full mb-2.5">
+        <form action="" class="pb-2 flex flex-col">
+            <div class="flex flex-row items-center w-full mb-1.5">
                 <div class="sign-up-icon"><i class="fa fa-at fa-lg"></i></div>
                 <input class="sign-up-input" type="text" name="email" placeholder="Your email...">
             </div>
-            <div class="flex flex-row items-center w-full mb-2.5">
+            <div class="flex flex-row items-center w-full mb-1.5">
                 <div class="sign-up-icon"><i class="fa fa-key fa-lg"></i></div>
                 <input class="sign-up-input" type="text" name="password" placeholder="Your password...">
             </div>
-            <div class="flex flex-row items-center w-full mb-5">
+            <div class="flex flex-row items-center w-full mb-2.5">
                 <div class="sign-up-icon"><i class="fa fa-key fa-lg"></i></div>
                 <input class="sign-up-input" type="text" name="password2" placeholder="Repeat password...">
             </div>
-            <input class="ml-5 mr-5 pt-3 pb-3 rounded-3xl bg-dark text-white text-lg shadow-lg" type="submit" name="sign up" value="Confirm">
+            <input class="ml-10 mr-5 pt-3 pb-2 rounded-3xl bg-dark text-white text-lg shadow-lg" type="submit" name="sign up" value="Confirm">
         </form>
-        <section class="text-center mb-5">
+        <section class="text-center mb-2.5">
             <div>Already have an account? <a href="#"><u>Sign in</u></a></div>
             <div>Forgot your password? <a href="#"><u>Reset here</u></a></div>
         </section>
@@ -39,4 +57,4 @@
         <div class="pb-5 ml-5 mr-5 text-center">By signing up, you confirm that you agree to our <strong>Terms of Service</strong> and <strong>Privacy Policy</strong></div>
     </div>
 </div>
-<p class="text-xs pb-5 pt-5 text-center">This website was was created by CBT-i practitioners, not by medical professionals, be sure to check with your doctor if CBT-i is right for you</p>
+<p class="text-xs pb-5 pt-5 text-center">This website was was created by CBT-i practitioners, not by medical professionals, check with your doctor if CBT-i is right for you</p>
