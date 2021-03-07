@@ -7,7 +7,7 @@
 }
 
 .head-option {
-@apply inline pl-5 pr-5;
+    @apply lg:inline p-5 text-supplementary transition duration-150 hover:bg-white rounded-xl hover:text-dark;
 }
 
 .header-btn {

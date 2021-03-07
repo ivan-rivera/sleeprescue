@@ -1,19 +1,16 @@
-<header class="text-white header">
+<header class="text-white header relative" x-data="{ isOpen: false }">
     <div class="logo">
         <img src="<%= Routes.static_path(@conn, "/images/logo.svg") %>" alt="logo">
     </div>
-    <div class="header-btn lg:hidden">
+    <div class="header-btn lg:hidden cursor-pointer transition duration-150 hover:bg-secondary" @click="isOpen=!isOpen">
         <div class="header-line long-line inline"></div>
         <div class="header-line short-line inline"></div>
         <div class="header-line long-line inline"></div>
     </div>
+    <nav class="absolute inline right-0 top-24 w-48 z-10 bg-dark border-2 border-white rounded-2xl" x-show="isOpen">
+        <%= render "headnav.html" %>
+    </nav>
     <nav class="hidden lg:block">
-    <ul>
-        <li class="head-option"><a href="#"><i class="text-supplementary fa fa-exclamation-triangle"></i> Terms of Service</a></li>
-        <li class="head-option"><a href="#"><i class="text-supplementary fa fa-file"></i> Privacy</a></li>
-        <li class="head-option"><a href="#"><i class="text-supplementary fa fa-phone-square"></i> Contact</a></li>
-        <li class="head-option"><a href="#"><i class="text-supplementary fa fa-info-circle"></i> About</a></li>
-        <li class="head-option"><a href="#"><i class="text-supplementary fa fa-user-circle"></i> Account</a></li>
-    </ul>
+        <%= render "headnav.html" %>
     </nav>
 </header>
