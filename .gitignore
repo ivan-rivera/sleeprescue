@@ -36,7 +36,6 @@ npm-debug.log
 .elixir_ls/
 .DS_Store
 .formatter.exs
-mix.lock
 assets/package-lock.json
 config/prod.secret.exs
 priv/cert/
