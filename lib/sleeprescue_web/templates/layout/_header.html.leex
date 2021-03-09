@@ -18,9 +18,9 @@
         x-transition:leave-end="opacity-0"
         @click.away="isOpen=false"
     >
-        <%= render "headnav.html" %>
+        <%= render "headnav.html", conn: @conn %>
     </nav>
     <nav class="hidden lg:block">
-        <%= render "headnav.html" %>
+        <%= render "headnav.html", conn: @conn %>
     </nav>
 </header>

@@ -1,7 +1,7 @@
 <ul>
-    <li class="head-option"><a href="#"><i class="fa fa-paperclip"></i> Terms of Service</a></li>
-    <li class="head-option"><a href="#"><i class="fa fa-file"></i> Privacy</a></li>
-    <li class="head-option"><a href="#"><i class="fa fa-phone-square"></i> Contact</a></li>
-    <li class="head-option"><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
-    <li class="head-option"><a href="#"><i class="fa fa-user-circle"></i> Account</a></li>
+    <li class="head-option"><i class="fa fa-paperclip"></i> <%= link "Terms of Service", to: Routes.tc_path(@conn, :index) %></li>
+    <li class="head-option"><i class="fa fa-file"></i> <%= link "Privacy", to: Routes.privacy_path(@conn, :index) %></li>
+    <li class="head-option"><i class="fa fa-phone-square"></i> <%= link "Contact", to: Routes.contact_path(@conn, :index) %></li>
+    <li class="head-option"><i class="fa fa-info-circle"></i> <%= link "About", to: Routes.about_path(@conn, :index) %></li>
+    <li class="head-option"><i class="fa fa-user-circle"></i> <a href="#">Account</a></li>
 </ul>

@@ -18,6 +18,10 @@ defmodule SleeprescueWeb.Router do
     pipe_through :browser
 
     get "/", WelcomeController, :index
+    get "/about", AboutController, :index
+    get "/privacy", PrivacyController, :index
+    get "/contact", ContactController, :index
+    get "/tc", TcController, :index
 
   end
 
