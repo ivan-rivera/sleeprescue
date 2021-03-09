@@ -31,7 +31,7 @@
     </div>
     <div class="max-w-lg lg:ml-5 p-1.5 flex flex-col justify-between text-dark rounded-xl bg-gradient-to-br from-supplementary to-primary">
         <section class="pb-5">
-            <div class="text-3xl font-bold text-center pb-2.5">Sign Up</div>
+            <div class="text-3xl font-bold text-center pb-2.5">Sign Up For Free</div>
             <div class="text-normal text-center">Your recovery begins today</div>
         </section>
         <form action="" class="pb-2 flex flex-col">
@@ -47,7 +47,7 @@
                 <div class="sign-up-icon"><i class="fa fa-key fa-lg"></i></div>
                 <input class="sign-up-input" type="text" name="password2" placeholder="Repeat password...">
             </div>
-            <input class="ml-10 mr-5 pt-3 pb-2 rounded-3xl bg-dark text-white text-lg shadow-lg transition duration-150 ease-in hover:text-dark hover:bg-secondary" type="submit" name="sign up" value="Confirm">
+            <input class="ml-10 mr-5 pt-3 pb-2 rounded-3xl bg-dark text-white text-lg shadow-lg transition duration-150 ease-in hover:text-dark hover:bg-secondary" type="submit" name="sign up" value="Continue">
         </form>
         <section class="text-center mb-2.5">
             <div>Already have an account? <a class="transition duration-150 hover:text-white" href="#"><u>Sign in</u></a></div>
