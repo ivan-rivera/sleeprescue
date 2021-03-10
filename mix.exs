@@ -33,6 +33,7 @@ defmodule Sleeprescue.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:bcrypt_elixir, "~> 2.0"},
       {:phoenix, "~> 1.5.8"},
       {:phoenix_ecto, "~> 4.2.1"},
       {:ecto_sql, "~> 3.5.4"},
@@ -45,6 +46,7 @@ defmodule Sleeprescue.MixProject do
       {:telemetry_poller, "~> 0.5.1"},
       {:gettext, "~> 0.18.2"},
       {:jason, "~> 1.2.2"},
+      {:phx_gen_auth, "~> 0.6", only: [:dev], runtime: false},
       {:plug_cowboy, "~> 2.4.1"}
     ]
   end
